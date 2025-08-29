@@ -1,0 +1,38 @@
+<!doctype html> <html> <head> 
+  <meta charset="utf-8"> 
+  <title>Products | Gulf Core</title> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+  <link rel="stylesheet" href="style.css"> <!-- PapaParse for CSV reading -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script> 
+  </head> <body> <header class="site-header">
+    <div class="container nav">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Gulf Core Energy Services Logo" height="70">
+                <strong>Gulf Core Energy Services</strong>
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle">&#9776;</div>
+    </div>
+</header>
+ <main> <section class="section container"> <h2>Our Products & Services</h2> <input type="text" id="search-bar" placeholder="Search products..." /> <div id="category-buttons" class="category-grid"></div> <div id="products-container"></div> </section> </main>   
+ <!-- Footer -->  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+  <a href="https://wa.me/97455971927" class="whatsapp-float" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a> <script src="script.js"></script> </body> </html>

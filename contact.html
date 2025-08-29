@@ -1,0 +1,37 @@
+<!doctype html> 
+<html> <head>
+   <meta charset="utf-8"> <title>Contact | Gulf Core</title> 
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
+   <link rel="stylesheet" href="style.css"> </head>
+    <body><header class="site-header">
+    <div class="container nav">
+        <!-- Logo Section -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.jpg" alt="Gulf Core Energy Services Logo" height="70">
+                <strong>Gulf Core Energy Services</strong>
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="main-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="products.html">Products</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger Menu for Mobile -->
+        <div class="menu-toggle">&#9776;</div>
+    </div>
+</header>
+ <main> <section class="section container contact-section"> <!-- Left side: info + form --> <div class="contact-left"> <h2>Contact Us</h2> <p><i class="fa-solid fa-phone"></i> <strong>Phone:</strong> +974 3999 4574 (WhatsApp)</p> <p><i class="fa-solid fa-envelope"></i> <strong>Email:</strong> trading@gulfcore.energy</p> <p><i class="fa-solid fa-envelope-open-text"></i> <strong>Alternate Email:</strong> gulfcoreenergytrading@gmail.com</p> <p><i class="fa-solid fa-location-dot"></i> <strong>Address:</strong> Shop No. 04, Building No. 219, Street 3085, Zone 91, Birkath Al Awameer, Doha - Qatar</p> <!-- Contact Form --> <form action="mailto:trading@gulfcore.energy" method="post" enctype="text/plain"> <input type="text" name="name" placeholder="Your Name" required> <input type="email" name="email" placeholder="Your Email" required> <textarea name="message" placeholder="Your Message" rows="5" required></textarea> <button type="submit" class="btn">Send</button> </form> </div> <!-- Right side: map --> <div class="contact-right"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3629.807832353338!2d51.5300!3d25.2854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c5f3d4e1e7bf%3A0x1234567890abcdef!2sDoha%2C%20Qatar!5e0!3m2!1sen!2sqa!4v1700000000000" width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"> </iframe> </div> </section> </main> 
+ <!-- Footer -->  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("footer").innerHTML = data;
+      });
+  </script>
+   <!-- WhatsApp Floating Icon --> <a href="https://wa.me/97455971927" class="whatsapp-float" target="_blank"> <i class="fa-brands fa-whatsapp"></i> </a> </body> </html>
